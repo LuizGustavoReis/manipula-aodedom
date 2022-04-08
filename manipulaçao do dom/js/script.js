@@ -60,7 +60,24 @@ function calcular(){
     const listaoperacoes = document.getElementById("listaoperacoes");// cria uma variavel q leva o objeto 
     listaoperacoes.appendChild(itemoperacao); //adiciona novo 
 
-}
 
+
+}
+//---------------------- CALCULADORA
+
+function gerartabuada(){
+const valor = parseInt(document.getElementById("valortabuada").value);
+
+const tabuada = document.getElementById("tabuada");
+
+ for(let i =1; i <= 10; i++){
+       const linha = document.createElement("p");
+       linha.innerText = valor + "x" + i +"="+ (valor*i);
+       tabuada.appendChild(linha);
+
+    }
+
+
+}
  
  
